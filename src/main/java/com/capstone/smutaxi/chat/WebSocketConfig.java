@@ -1,5 +1,6 @@
-package com.capstone.smutaxi;
+package com.capstone.smutaxi.chat;
 
+import com.capstone.smutaxi.chat.StompHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.ChannelRegistration;

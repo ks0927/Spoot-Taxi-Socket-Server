@@ -1,4 +1,4 @@
-package com.capstone.smutaxi;
+package com.capstone.smutaxi.utils;
 
 import org.springframework.stereotype.Component;
 

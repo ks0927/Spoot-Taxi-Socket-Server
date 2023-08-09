@@ -1,4 +1,4 @@
-package com.capstone.smutaxi;
+package com.capstone.smutaxi.chat;
 
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;

@@ -1,4 +1,4 @@
-package com.capstone.smutaxi;
+package com.capstone.smutaxi.domain;
 
 import lombok.Getter;
 import lombok.Setter;

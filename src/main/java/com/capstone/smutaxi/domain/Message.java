@@ -1,5 +1,6 @@
-package com.capstone.smutaxi;
+package com.capstone.smutaxi.domain;
 
+import com.capstone.smutaxi.domain.ChatRoom;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;

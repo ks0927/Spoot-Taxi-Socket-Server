@@ -1,5 +1,10 @@
-package com.capstone.smutaxi;
+package com.capstone.smutaxi.chat;
 
+import com.capstone.smutaxi.ApiClient;
+import com.capstone.smutaxi.utils.IDGenerator;
+import com.capstone.smutaxi.domain.Message;
+import com.capstone.smutaxi.domain.SystemMessage;
+import com.capstone.smutaxi.domain.UserMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.simp.SimpMessagingTemplate;

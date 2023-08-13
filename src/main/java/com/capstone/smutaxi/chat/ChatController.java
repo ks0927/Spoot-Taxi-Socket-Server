@@ -1,6 +1,5 @@
 package com.capstone.smutaxi.chat;
 
-import com.capstone.smutaxi.ApiClient;
 import com.capstone.smutaxi.KafkaProducerService;
 import com.capstone.smutaxi.utils.IDGenerator;
 import com.capstone.smutaxi.entity.SystemMessage;
@@ -17,14 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class ChatController {
 
     private final SimpMessagingTemplate messagingTemplate;
-    private final ApiClient apiClient;
     private final IDGenerator idGenerator;
     private final KafkaProducerService kafkaProducerService;
 
     @MessageMapping("/send")
     public void userChat(UserMessage message) {
         message.setId(idGenerator.getNextId());
-        //Message sendUserMessage = apiClient.saveUserMessage(message);
         kafkaProducerService.sendUserMessage(message);
         messagingTemplate.convertAndSend("/sub/channel/" + message.getChatRoom().getId(), message);
     }
@@ -35,7 +32,6 @@ public class ChatController {
         message.setMessage(message.getSenderName() + "님이 나갔습니다.");
         message.setIsSystem(true);
 
-        //Message sendExitMessage = apiClient.saveSystemMessage(systemMessage);
         kafkaProducerService.sendSystemMessage(message);
         messagingTemplate.convertAndSend("/sub/channel/" + message.getChatRoom().getId(), message);
     }

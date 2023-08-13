@@ -1,8 +1,8 @@
 package com.capstone.smutaxi;
 
-import com.capstone.smutaxi.domain.Message;
-import com.capstone.smutaxi.domain.SystemMessage;
-import com.capstone.smutaxi.domain.UserMessage;
+import com.capstone.smutaxi.entity.Message;
+import com.capstone.smutaxi.entity.SystemMessage;
+import com.capstone.smutaxi.entity.UserMessage;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;

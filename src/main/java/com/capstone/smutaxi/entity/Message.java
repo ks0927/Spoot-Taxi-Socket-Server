@@ -1,12 +1,10 @@
-package com.capstone.smutaxi.domain;
+package com.capstone.smutaxi.entity;
 
-import com.capstone.smutaxi.domain.ChatRoom;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-
 
 @Getter
 @Setter

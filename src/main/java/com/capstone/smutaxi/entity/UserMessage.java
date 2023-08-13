@@ -1,6 +1,5 @@
-package com.capstone.smutaxi.domain;
+package com.capstone.smutaxi.entity;
 
-import com.capstone.smutaxi.domain.Message;
 import lombok.Getter;
 import lombok.Setter;
 
